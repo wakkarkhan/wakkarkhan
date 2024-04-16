@@ -1,16 +1,49 @@
 ### Hi there 👋
 
-<!--
-**wakkarkhan/wakkarkhan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<?php
 
-Here are some ideas to get you started:
+namespace Wakkarkhan;
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+class About extends Me
+{
+    public function getBio(): string
+    {
+        return 'I m a software developer specializing in PHP and JavaScript.
+                I develop modern technology web applications with popular frameworks like Laravel, Vue and React.
+                SaaS,
+                Multi-Tenancy,
+                E-Commerce,
+                RestFull API
+                I develop advanced software with software architectures.
+                Eternal student.';
+    } 
+
+    public function getMore(): array
+    {
+        return [
+            'work' => [
+                'Software Developer - Codematics',
+                'Frontend Developer - Propertise',
+            ]
+        ];
+    }
+
+    public function getCurrentState(): array 
+    {
+        return [
+            'working_on' => [
+                'Propertise - Cloud-based property management software (SaaS)',
+                'Ecommerce - Livewire eccomerce application'
+            ],
+            'learning' => [
+                'Advance Programing Techniques',
+                'Goo Lang'
+            ]
+        ];
+    }
+
+    public function getFutureGoal(): string
+    {
+        return 'To contribute to open source.';
+    }
+}
